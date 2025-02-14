@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="SERIES"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/yellow"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="33dp"
+            android:layout_height="2dp">
+
+        </View>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridviewSeries"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:numColumns="3">
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="300dp"
+            android:background="@color/yellow"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="13dp"
+            android:layout_height="2dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginRight="9dp"
+            android:text="MOVIES"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridviewMovies"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:numColumns="3">
+
+    </GridView>
+
+</LinearLayout>
