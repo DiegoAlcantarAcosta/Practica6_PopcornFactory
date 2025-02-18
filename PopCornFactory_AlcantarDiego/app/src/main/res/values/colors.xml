@@ -5,7 +5,9 @@
     <color name="yellow">#FFD700</color>
     <color name="less_yellow">#CCAC00</color>
     <color name="grey">#383838</color>
+    <color name="light_grey">#5F5F5F</color>
     <color name="fondo">#1D1D1D</color>
     <color name="fondo_boton">#FFD501</color>
+    <color name="letra">#9E9E9E</color>
 
 </resources>

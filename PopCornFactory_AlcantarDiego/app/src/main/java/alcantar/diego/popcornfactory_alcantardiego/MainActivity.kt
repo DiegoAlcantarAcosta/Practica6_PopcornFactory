@@ -1,21 +1,17 @@
 package alcantar.diego.popcornfactory_alcantardiego
 
-import alcantar.diego.popcornfactory_alcantardiego.databinding.ActivityDetallePeliculaBinding
 import alcantar.diego.popcornfactory_alcantardiego.databinding.ActivityMainBinding
 import alcantar.diego.popcornfactory_alcantardiego.databinding.PeliculaBinding
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -52,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                         "midst of danger, he turns to Baymax and his close friends adrenaline junkie Go Go\n" +
                         "Tomago, neatnik Wasabi, chemistry whiz Honey Lemon and fanboy Fred. Determined to\n" +
                         "uncover the mystery, Hiro transforms his friends into a band of high-tech heroes called\n" +
-                        "Big Hero 6."
+                        "Big Hero 6.", arrayListOf<Cliente>()
             )
         )
 
@@ -65,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                         "six 20 something year-olds, living off of one another in the heart of New York City. Over the course\n" +
                         "of ten years, this average group of buddies goes through massive mayhem, family trouble, past and\n" +
                         "future romances, fights, laughs, tears and surprises as they learn what it really means to be a\n" +
-                        "friend."
+                        "friend.", arrayListOf<Cliente>()
             )
         )
         peliculas.add(
@@ -83,7 +79,7 @@ class MainActivity : AppCompatActivity() {
                         "pull off the reverse: their task is not to steal an idea, but to plant one. If they succeed, it\n" +
                         "could be the perfect crime. But no amount of careful planning or expertise can prepare the\n" +
                         "team for the dangerous enemy that seems to predict their every move. An enemy that only\n" +
-                        "Cobb could have seen coming."
+                        "Cobb could have seen coming.", arrayListOf<Cliente>()
             )
         )
         peliculas.add(
@@ -94,7 +90,8 @@ class MainActivity : AppCompatActivity() {
                 "A woman who has an elaborate scheme to propose to her boyfriend on Leap Day, an Irish\n" +
                         "tradition which occurs every time the date February 29 rolls around, faces a major setback\n" +
                         "when bad weather threatens to derail her planned trip to Dublin. With the help of an\n" +
-                        "innkeeper, however, her cross-country odyssey just might result in her getting engaged."
+                        "innkeeper, however, her cross-country odyssey just might result in her getting engaged.",
+                arrayListOf<Cliente>()
             )
         )
         peliculas.add(
@@ -107,7 +104,8 @@ class MainActivity : AppCompatActivity() {
                         "the situation and gets into a fight with Buzz. Accidentaly Buzz falls out the window and\n" +
                         "Woody is accused by all the other toys of having killed him. He has to go out of the house\n" +
                         "to look for him so that they can both return to Andys room. But while on the outside they\n" +
-                        "get into all kind of trouble while trying to get home."
+                        "get into all kind of trouble while trying to get home.",
+                arrayListOf<Cliente>()
             )
         )
 
@@ -124,7 +122,7 @@ class MainActivity : AppCompatActivity() {
                         "the N.Y.P.D. Then, one day, a flying saucer crashes into Earth. This was an alien a part of\n" +
                         "the race. He takes the body of a farmer (Vincent) and heads to New York.\n" +
                         "He is searching for a super energy source called &quot;The Galaxy;. Now, Agents J and K must\n" +
-                        "stop the bug before it can escape with the galaxy."
+                        "stop the bug before it can escape with the galaxy.", arrayListOf<Cliente>()
             )
         )
 
@@ -135,7 +133,8 @@ class MainActivity : AppCompatActivity() {
                 R.drawable.drwhoheader,
                 "The series follows the life of anti-social, pain killer addict, witty and arrogant medical doctor Gregory\n" +
                         "House (Hugh Laurie) with only half a muscle in his right leg. He and his team of medical doctors try\n" +
-                        "to cure complex and rare diseases from very ill ordinary people in the United States of America."
+                        "to cure complex and rare diseases from very ill ordinary people in the United States of America.",
+                arrayListOf<Cliente>()
             )
         )
 
@@ -150,7 +149,7 @@ class MainActivity : AppCompatActivity() {
                         "found by Martha and Jonathan Kent on the day of the Meteor Shower, and subsequently adopted.\n" +
                         "Clark&#39;s friend Lex Luthor, the only heir of Luthorcorp, has been secretly investigating grounds for\n" +
                         "Clark&#39;s outlandish valor. However, on the face of it, Clark just seems a normal boy who&#39;s slightly\n" +
-                        "more secretive than usual."
+                        "more secretive than usual.", arrayListOf<Cliente>()
             )
         )
 
@@ -162,7 +161,8 @@ class MainActivity : AppCompatActivity() {
                 "Traveling across time and space, the immortal time-lord known as &#39;The Doctor&#39; travels across the\n" +
                         "universe with his many companions and his loyal shape-shifting space-ship: The TARDIS. The\n" +
                         "Doctor faces many threats across many generations: from The Daleks, The Cybermen and his time-\n" +
-                        "lord adversary The Master to the sinister Davros, creator of The Daleks."
+                        "lord adversary The Master to the sinister Davros, creator of The Daleks.",
+                arrayListOf<Cliente>()
             )
         )
 
@@ -175,7 +175,7 @@ class MainActivity : AppCompatActivity() {
                         "ambitious FBI agent, named Seely Booth, to help the bureau solve a series of unsolved crimes by\n" +
                         "identifying the long-dead bodies of missing persons by their bone structure. But both Agent Booth\n" +
                         "and Dr. Brennan and her team come up again a variety of interference from red tape, corruption,\n" +
-                        "and local noncooperation."
+                        "and local noncooperation.", arrayListOf<Cliente>()
             )
         )
 
@@ -194,10 +194,9 @@ class MainActivity : AppCompatActivity() {
                         "Harvey´s no-nonsense assistant Donna. Proving to be an irrepressible duo and invaluable to the\n" +
                         "practice, Mike and Harvey must keep their secret from everyone including managing partner\n" +
                         "Jessica and Harvey´s archnemesis Louis, who seems intent on making Mike´s life as difficult as\n" +
-                        "possible."
+                        "possible.", arrayListOf<Cliente>()
             )
         )
-
     }
 }
 
@@ -231,20 +230,21 @@ class PeliculaAdapter : BaseAdapter {
         binding.tvNombrePelicula.text = pelicula.titulo
 
         binding.ivPelicula.setOnClickListener {
+            var seatsAvailable = 20-pelicula.seats.size
+            Log.d("SEATS", "$seatsAvailable")
             val intent = Intent(context, DetallePelicula::class.java).apply {
                 putExtra("titulo", pelicula.titulo)
                 putExtra("image", pelicula.image)
                 putExtra("header", pelicula.header)
                 putExtra("sinopsis", pelicula.sinopsis)
+                putExtra("numberSeats", seatsAvailable)
+                putExtra("pos", p0)
             }
             context!!.startActivity(intent)
         }
 
         return binding.root
     }
-
-
-
 
 
 }

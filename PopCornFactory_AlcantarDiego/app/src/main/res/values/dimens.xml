@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">25sp</dimen>
+    <dimen name="titleSize">20sp</dimen>
+    <dimen name="regText">14sp</dimen>
+    <dimen name="descText">15sp</dimen>
+    <dimen name="buttonText">20sp</dimen>
+    <dimen name="paddingButton">25sp</dimen>
+    <dimen name="marginTopRadioGroup">30dp</dimen>
+    <dimen name="paddingGroup">10dp</dimen>
+    <dimen name="radioButton">60dp</dimen>
+    <dimen name="radioButtonText">20dp</dimen>
+    <dimen name="horizontalRadio">3dp</dimen>
+    <dimen name="symbols">40dp</dimen>
+</resources>

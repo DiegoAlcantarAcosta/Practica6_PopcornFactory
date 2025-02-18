@@ -63,5 +63,27 @@
 
     </TextView>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buy_tickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/black"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:layout_marginTop="10dp"
+        android:text="Buy my ticket!" />
+
+    <TextView
+        android:id="@+id/seatsLeft"
+        android:textColor="@color/letra"
+        android:textStyle="italic"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
 </LinearLayout>
 
